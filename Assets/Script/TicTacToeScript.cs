@@ -39,6 +39,7 @@ public class TicTacToeScript : MonoBehaviour
     public Button btn7;
     public Button btn8;
     public Button btn9;
+    public Button btnQuit;
 
     [Header("Image Cross")]
     public GameObject Img1;
@@ -447,5 +448,11 @@ public class TicTacToeScript : MonoBehaviour
         }
         score();
         btn9.interactable = false;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+
     }
 }
